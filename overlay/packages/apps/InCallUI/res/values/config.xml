@@ -20,3 +20,4 @@
 <resources>
     <bool name="config_disable_audio_boost">false</bool>
 </resources>
+
