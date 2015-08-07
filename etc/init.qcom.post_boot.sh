@@ -285,11 +285,11 @@ case "$target" in
                 echo "interactive" > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
                 echo "interactive" > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
                 echo "interactive" > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
-                echo 20000 > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
+                echo "20000 1400000:40000 1700000:20000" > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
                 echo 90 > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
                 echo 1036800 > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
                 echo 0 > /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
-                echo 85 > /sys/devices/system/cpu/cpufreq/interactive/target_loads
+                echo "85 1500000:90 1800000:70" > /sys/devices/system/cpu/cpufreq/interactive/target_loads
                 echo 40000 > /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
                 echo 100000 > /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor
                 setprop ro.qualcomm.perf.cores_online 1
