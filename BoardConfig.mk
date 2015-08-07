@@ -215,6 +215,6 @@ PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/keyboards/AVRCP.kl:syste
     frameworks/base/data/keyboards/Generic.kl:system/usr/keylayout/Generic.kl \
     frameworks/base/data/keyboards/Generic.kcm:system/usr/keychars/Generic.kcm, $(PRODUCT_COPY_FILES))
 
-# Clean
-include device/nubia/nx507j/lite.mk
+# Packages
+PRODUCT_PACKAGES := $(filter-out BluetoothExt Development Profiles VoicePlus Basic Launcher3 AudioFX CMWallpapers CMFileManager CMUpdater CMAccount CMHome Galaxy4 HoloSpiralWallpaper LiveWallpapers MagicSmokeWallpapers NoiseField PhaseBeam VisualizationWallpapers PhotoTable SoundRecorder PhotoPhase LatinIME Stk CellBroadcastReceiver WhisperPush Terminal BasicDreams Calendar CalendarProvider CaptivePortalLogin Email Exchange2 ExternalStorageProvider InputDevices Launcher2 PicoTts PacProcessor PrintSpooler ProxyHandler QuickSearchBox SharedStorageBackup BackupRestoreConfirmation HTMLViewer Shell WAPPushManager Music MusicFX OneTimeInitializer nano, $(PRODUCT_PACKAGES))
 
