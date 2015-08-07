@@ -372,18 +372,18 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt
 PRODUCT_COPY_FILES += \
-    device/nubia/nx507j/prebuilt/01.apk:system/priv-app/01/01.apk \
-    device/nubia/nx507j/prebuilt/Forest.ogg:system/media/audio/alarms/Forest.ogg \
-    device/nubia/nx507j/prebuilt/Journey.ogg:system/media/audio/alarms/Journey.ogg \
-    device/nubia/nx507j/prebuilt/Smooth.ogg:system/media/audio/alarms/Smooth.ogg \
-    device/nubia/nx507j/prebuilt/SMS.ogg:system/media/audio/notifications/SMS.ogg \
-    device/nubia/nx507j/prebuilt/Chorus.ogg:system/media/audio/ringtones/Chorus.ogg \
-    device/nubia/nx507j/prebuilt/Journey.ogg:system/media/audio/ringtones/Journey.ogg \
-    device/nubia/nx507j/prebuilt/Leisure.ogg:system/media/audio/ringtones/Leisure.ogg \
-    device/nubia/nx507j/prebuilt/MI.ogg:system/media/audio/ringtones/MI.ogg \
-    device/nubia/nx507j/prebuilt/Orange.ogg:system/media/audio/ringtones/Orange.ogg \
-    device/nubia/nx507j/prebuilt/Over_the_horizon.ogg:system/media/audio/ringtones/Over_the_horizon.ogg \
-    device/nubia/nx507j/prebuilt/S4_Over_the_horizon.ogg:system/media/audio/ringtones/S4_Over_the_horizon.ogg \
-    device/nubia/nx507j/prebuilt/Smooth.ogg:system/media/audio/ringtones/Smooth.ogg \
-    device/nubia/nx507j/prebuilt/Tune.ogg:system/media/audio/ringtones/Tune.ogg
+    $(LOCAL_PATH)/prebuilt/01.apk:system/priv-app/01/01.apk \
+    $(LOCAL_PATH)/prebuilt/Forest.ogg:system/media/audio/alarms/Forest.ogg \
+    $(LOCAL_PATH)/prebuilt/Journey.ogg:system/media/audio/alarms/Journey.ogg \
+    $(LOCAL_PATH)/prebuilt/Smooth.ogg:system/media/audio/alarms/Smooth.ogg \
+    $(LOCAL_PATH)/prebuilt/SMS.ogg:system/media/audio/notifications/SMS.ogg \
+    $(LOCAL_PATH)/prebuilt/Chorus.ogg:system/media/audio/ringtones/Chorus.ogg \
+    $(LOCAL_PATH)/prebuilt/Journey.ogg:system/media/audio/ringtones/Journey.ogg \
+    $(LOCAL_PATH)/prebuilt/Leisure.ogg:system/media/audio/ringtones/Leisure.ogg \
+    $(LOCAL_PATH)/prebuilt/MI.ogg:system/media/audio/ringtones/MI.ogg \
+    $(LOCAL_PATH)/prebuilt/Orange.ogg:system/media/audio/ringtones/Orange.ogg \
+    $(LOCAL_PATH)/prebuilt/Over_the_horizon.ogg:system/media/audio/ringtones/Over_the_horizon.ogg \
+    $(LOCAL_PATH)/prebuilt/S4_Over_the_horizon.ogg:system/media/audio/ringtones/S4_Over_the_horizon.ogg \
+    $(LOCAL_PATH)/prebuilt/Smooth.ogg:system/media/audio/ringtones/Smooth.ogg \
+    $(LOCAL_PATH)/prebuilt/Tune.ogg:system/media/audio/ringtones/Tune.ogg
 
