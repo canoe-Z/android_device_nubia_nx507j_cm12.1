@@ -4,8 +4,6 @@ powermode=`getprop sys.perf.profile`
 dev_governor=`ls /sys/class/devfreq/qcom,cpubw*/governor`
         case "$powermode" in
             "2")
-                 stop mpdecision
-                 sleep 0.5
                  echo 1                                    > /sys/devices/system/cpu/cpu0/online
                  echo 1                                    > /sys/devices/system/cpu/cpu1/online
                  echo 1                                    > /sys/devices/system/cpu/cpu2/online
@@ -28,8 +26,6 @@ dev_governor=`ls /sys/class/devfreq/qcom,cpubw*/governor`
                  echo "msm_cpufreq"                        > $dev_governor
               ;;
             "1")
-                 start mpdecision
-                 sleep 0.5
                  echo 1958400                              > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
                  echo 1958400                              > /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
                  echo 1958400                              > /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
@@ -48,8 +44,6 @@ dev_governor=`ls /sys/class/devfreq/qcom,cpubw*/governor`
                  echo "cpubw_hwmon"                        > $dev_governor
              ;;
              "0")
-                 start mpdecision
-                 sleep 0.5
                  echo 1267200                              > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
                  echo 1267200                              > /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
                  echo 1267200                              > /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq

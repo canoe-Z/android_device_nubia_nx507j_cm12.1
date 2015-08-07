@@ -514,9 +514,6 @@ case "$target" in
     "msm8660" | "msm8960" | "msm8226" | "msm8610")
         start mpdecision
     ;;
-    "msm8974")
-        start mpdecision
-    ;;
     "apq8084")
         rm /data/system/default_values
         start mpdecision
