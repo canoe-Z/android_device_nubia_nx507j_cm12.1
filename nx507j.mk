@@ -261,10 +261,6 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     ueventd.rc
 
-# Torch
-PRODUCT_PACKAGES += \
-    Torch
-
 # Thermal config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf \
