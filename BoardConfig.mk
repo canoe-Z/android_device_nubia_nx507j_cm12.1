@@ -184,6 +184,9 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/recovery.fstab
 BOARD_VENDOR := zte-qcom
 #TARGET_SPECIFIC_HEADER_PATH := device/nubia/nx507j/include
 
+# Preload Boot Animation
+TARGET_BOOTANIMATION_PRELOAD := true
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
