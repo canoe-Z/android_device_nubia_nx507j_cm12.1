@@ -145,4 +145,4 @@ persist.sys.wfd.zte_resolution=2
 persist.sys.wfd.zsink_support=1
 persist.sys.wfd.1080p_support=true
 
-# qemu.hw.mainkeys=1
+# qemu.hw.mainkeys=0
