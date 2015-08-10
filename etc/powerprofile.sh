@@ -23,6 +23,7 @@ dev_governor=`ls /sys/class/devfreq/qcom,cpubw*/governor`
                  echo interactive                          > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
                  echo interactive                          > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
                  echo 1036800                              > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+                 echo 90                                   > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
                  echo 0                                    > /sys/devices/system/cpu/sched_mc_power_savings
                  echo 578000000                            > /sys/class/kgsl/kgsl-3d0/max_gpuclk
                  echo msm-adreno-tz                        > /sys/class/kgsl/kgsl-3d0/devfreq/governor
@@ -44,6 +45,7 @@ dev_governor=`ls /sys/class/devfreq/qcom,cpubw*/governor`
                  echo interactive                          > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
                  echo interactive                          > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
                  echo 1036800                              > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+                 echo 90                                   > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
                  echo 1                                    > /sys/devices/system/cpu/sched_mc_power_savings
                  echo 578000000                            > /sys/class/kgsl/kgsl-3d0/max_gpuclk
                  echo msm-adreno-tz                        > /sys/class/kgsl/kgsl-3d0/devfreq/governor
