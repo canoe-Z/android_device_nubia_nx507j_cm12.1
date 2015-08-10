@@ -6,6 +6,10 @@ dev_governor=`ls /sys/class/devfreq/qcom,cpubw*/governor`
             "2")
                  stop mpdecision
                  sleep 0.5
+                 echo 1                                    > /sys/devices/system/cpu/cpu0/online
+                 echo 1                                    > /sys/devices/system/cpu/cpu1/online
+                 echo 1                                    > /sys/devices/system/cpu/cpu2/online
+                 echo 1                                    > /sys/devices/system/cpu/cpu3/online
                  echo 2265600                              > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
                  echo 2265600                              > /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
                  echo 2265600                              > /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
@@ -19,10 +23,6 @@ dev_governor=`ls /sys/class/devfreq/qcom,cpubw*/governor`
                  echo interactive                          > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
                  echo interactive                          > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
                  echo 0                                    > /sys/devices/system/cpu/sched_mc_power_savings
-                 echo 0                                    > /sys/module/cpu_boost/parameters/boost_ms
-                 echo 0                                    > /sys/module/cpu_boost/parameters/sync_threshold
-                 echo 960000                               > /sys/module/cpu_boost/parameters/input_boost_freq
-                 echo 40                                   > /sys/module/cpu_boost/parameters/input_boost_ms
                  echo 578000000                            > /sys/class/kgsl/kgsl-3d0/max_gpuclk
                  echo msm-adreno-tz                        > /sys/class/kgsl/kgsl-3d0/devfreq/governor
                  echo "msm_cpufreq"                        > $dev_governor
@@ -43,10 +43,6 @@ dev_governor=`ls /sys/class/devfreq/qcom,cpubw*/governor`
                  echo interactive                          > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
                  echo interactive                          > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
                  echo 1                                    > /sys/devices/system/cpu/sched_mc_power_savings
-                 echo 0                                    > /sys/module/cpu_boost/parameters/boost_ms
-                 echo 0                                    > /sys/module/cpu_boost/parameters/sync_threshold
-                 echo 960000                               > /sys/module/cpu_boost/parameters/input_boost_freq
-                 echo 40                                   > /sys/module/cpu_boost/parameters/input_boost_ms
                  echo 578000000                            > /sys/class/kgsl/kgsl-3d0/max_gpuclk
                  echo msm-adreno-tz                        > /sys/class/kgsl/kgsl-3d0/devfreq/governor
                  echo "cpubw_hwmon"                        > $dev_governor
@@ -67,10 +63,6 @@ dev_governor=`ls /sys/class/devfreq/qcom,cpubw*/governor`
                  echo conservative                         > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
                  echo conservative                         > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
                  echo 2                                    > /sys/devices/system/cpu/sched_mc_power_savings
-                 echo 0                                    > /sys/module/cpu_boost/parameters/boost_ms
-                 echo 0                                    > /sys/module/cpu_boost/parameters/sync_threshold
-                 echo 960000                               > /sys/module/cpu_boost/parameters/input_boost_freq
-                 echo 40                                   > /sys/module/cpu_boost/parameters/input_boost_ms
                  echo 389000000                            > /sys/class/kgsl/kgsl-3d0/max_gpuclk
                  echo msm-adreno-tz                        > /sys/class/kgsl/kgsl-3d0/devfreq/governor
                  echo "cpubw_hwmon"                        > $dev_governor
