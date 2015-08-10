@@ -278,8 +278,8 @@ PRODUCT_PACKAGES += \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf \
-    p2p_supplicant_overlay.conf \
     wpa_supplicant_overlay.conf \
+    p2p_supplicant_overlay.conf \
     wpa_supplicant_ath6kl.conf
 
 # ANT+
