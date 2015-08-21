@@ -16,7 +16,7 @@
 
 # Release name
 PRODUCT_RELEASE_NAME := nx507j
-PRODUCT_NAME := cm_nx507j
+PRODUCT_NAME := bliss_nx507j
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
@@ -29,7 +29,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/nubia/nx507j/nx507j.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := nx507j
