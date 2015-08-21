@@ -232,4 +232,4 @@ TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
 
 
 # SaberMod
--include vendor/razer/config/sm.mk
+-include vendor/bliss/config/sm.mk
