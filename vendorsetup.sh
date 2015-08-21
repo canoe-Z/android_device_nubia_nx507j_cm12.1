@@ -1,2 +1,3 @@
-add_lunch_combo cm_nx507j-userdebug
-
+add_lunch_combo bliss_nx507j-user
+add_lunch_combo bliss_nx507j-userdebug
+add_lunch_combo bliss_nx507j-eng
