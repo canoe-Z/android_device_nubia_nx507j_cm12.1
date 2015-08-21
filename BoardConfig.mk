@@ -208,12 +208,6 @@ TARGET_BUILD_TYPE := release
 # Buildinfo
 BUILD_NUMBER := $(shell date +%Y%m%d)
 
-# Linaro
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-gnueabihf-4.9-linaro/bin
-KERNEL_TOOLCHAIN_PREFIX := arm-cortex_a15-linux-gnueabihf-
-TARGET_TOOLCHAIN_ROOT := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-linaro
-TARGET_TOOLS_PREFIX := $(TARGET_TOOLCHAIN_ROOT)/bin/arm-linux-androideabi-
-
 # Filter
 PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/keyboards/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
     frameworks/base/data/keyboards/Generic.kl:system/usr/keylayout/Generic.kl \
@@ -223,8 +217,8 @@ PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/keyboards/AVRCP.kl:syste
 PRODUCT_PACKAGES := $(filter-out BluetoothExt Development Profiles VoicePlus Basic Launcher3 AudioFX CMWallpapers CMFileManager CMUpdater CMAccount CMHome Galaxy4 HoloSpiralWallpaper LiveWallpapers MagicSmokeWallpapers NoiseField PhaseBeam VisualizationWallpapers PhotoTable SoundRecorder PhotoPhase LatinIME Stk CellBroadcastReceiver WhisperPush Terminal BasicDreams Calendar CalendarProvider CaptivePortalLogin Email Exchange2 ExternalStorageProvider InputDevices Launcher2 PicoTts PacProcessor PrintSpooler ProxyHandler QuickSearchBox SharedStorageBackup BackupRestoreConfirmation HTMLViewer Shell WAPPushManager Music MusicFX OneTimeInitializer nano, $(PRODUCT_PACKAGES))
 
 #RazerRom
-TARGET_TC_ROM := 5.1
-TARGET_TC_KERNEL := 5.1
+TARGET_TC_ROM := 5.1-sm
+TARGET_TC_KERNEL := 5.1-sm
 BLISS_O3 := true
 BLISS_GRAPHITE := true
 BLISS_STRICT := true
