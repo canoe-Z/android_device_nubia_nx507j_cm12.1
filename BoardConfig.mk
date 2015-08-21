@@ -216,20 +216,28 @@ PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/keyboards/AVRCP.kl:syste
 # Packages
 PRODUCT_PACKAGES := $(filter-out BluetoothExt Development Profiles VoicePlus Basic Launcher3 AudioFX CMWallpapers CMFileManager CMUpdater CMAccount CMHome Galaxy4 HoloSpiralWallpaper LiveWallpapers MagicSmokeWallpapers NoiseField PhaseBeam VisualizationWallpapers PhotoTable SoundRecorder PhotoPhase LatinIME Stk CellBroadcastReceiver WhisperPush Terminal BasicDreams Calendar CalendarProvider CaptivePortalLogin Email Exchange2 ExternalStorageProvider InputDevices Launcher2 PicoTts PacProcessor PrintSpooler ProxyHandler QuickSearchBox SharedStorageBackup BackupRestoreConfirmation HTMLViewer Shell WAPPushManager Music MusicFX OneTimeInitializer nano, $(PRODUCT_PACKAGES))
 
-BLISS_BUILD_BLOCK := 1
+# BlissPop Config Flags
 BLISS_WIPE_CACHES := 0
-TARGET_TC_ROM := 5.1-sm
-TARGET_TC_KERNEL := 5.1-sm
+TARGET_TC_ROM := 5.1-linaro
+TARGET_TC_KERNEL := 5.1-linaro
 BLISSIFY := true
 BLISS_O3 := true
-BLISS_GRAPHITE := true
 BLISS_STRICT := true
+BLISS_GRAPHITE := true
 BLISS_KRAIT := true
 BLISS_PIPE := true
-
+FLOOP_NEST_OPTIMIZE := true
+ENABLE_GCCONLY := true
+FAST_MATH := true
+ENABLE_MODULAR_O3 := true
+ENABLE_LTO := true
+Link_Time_Optimizations := true
+TARGET_USE_ION_COMPAT := true
+TARGET_USE_KRAIT_PLD_SET := true
 TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
-
+TARGET_ENABLE_UKM := true
+WITH_LZMA_OTA := true
 
 # SaberMod
 -include vendor/bliss/config/sm.mk
