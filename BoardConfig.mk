@@ -218,8 +218,8 @@ PRODUCT_PACKAGES := $(filter-out BluetoothExt Development Profiles VoicePlus Bas
 
 # BlissPop Config Flags
 BLISS_WIPE_CACHES := 0
-TARGET_TC_ROM := 5.1-linaro
-TARGET_TC_KERNEL := 4.9-linaro
+TARGET_TC_ROM := 5.1-sm
+TARGET_TC_KERNEL := 4.9-hybrid
 BLISSIFY := true
 BLISS_O3 := true
 BLISS_STRICT := true
