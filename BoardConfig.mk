@@ -205,9 +205,6 @@ DONT_DEXPREOPT_PREBUILTS := true
 TARGET_BUILD_TYPE := release
 #TARGET_BUILD_VARIANT := user
 
-# Buildinfo
-BUILD_NUMBER := $(shell date +%Y%m%d)
-
 # Filter
 PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/keyboards/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
     frameworks/base/data/keyboards/Generic.kl:system/usr/keylayout/Generic.kl \
